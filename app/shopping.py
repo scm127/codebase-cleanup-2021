@@ -41,7 +41,7 @@ for p in selected_products:
 print("---------")
 print(f"SUBTOTAL: {format_usd(subtotal)}")
 print(f"TAX: {format_usd(subtotal * 0.0875)}")
-print(f"TOTAL: {(format_usd(subtotal * 0.0875) + subtotal)}")
+print(f"TOTAL: {(format_usd((subtotal * 0.0875) + subtotal))}")
 print("---------")
 print("THANK YOU! PLEASE COME AGAIN SOON!")
 print("---------")
@@ -54,7 +54,7 @@ receipt_filepath = os.path.join(os.path.dirname(__file__), "..", "receipts", f"{
 with open(receipt_filepath, "w") as receipt_file:
     receipt_file.write("------------------------------------------")
     for p in selected_products:
-        receipt_file.write("\nSELECTED PRODUCT: " + p["name"] + "   " + '${:.0f}'.format(p["price"]))
+        receipt_file.write("\nSELECTED PRODUCT: " + p["name"] + "   " + format_usd(p["price"]))
 
     receipt_file.write("\n---------")
     receipt_file.write(f"\nSUBTOTAL: {subtotal}")
