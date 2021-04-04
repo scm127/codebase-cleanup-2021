@@ -3,6 +3,11 @@ from datetime import datetime
 from pandas import read_csv
 
 def format_usd(my_price):
+    """
+    Formats a number as a US dollar with a dollar sign and two decimals
+    Paramater: my_price is a number (int or float) that we want to format
+    Ex: format_usd(12.57)
+    """
     return f"{my_price:,.2f}"
 
 
