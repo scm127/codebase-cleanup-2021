@@ -6,7 +6,7 @@ VALID_OPTIONS=["rock","paper", "scissors"]
 def determine_winner(choice1,choice2):
     """
     Params:
-    Choice1 and Choice2 are one of the strings: "rock", "paper", or "scissors"
+    Choice1 and Choice2 must be one of the three strings: "rock", "paper", or "scissors"
     """
     winners = {
         "rock":{
@@ -31,14 +31,6 @@ def determine_winner(choice1,choice2):
 
 if __name__ == '__main__':
 
-
-
-
-
-
-        
-
-
     # USER SELECTION
     #
     u = input("Please choose one of 'Rock', 'Paper', or 'Scissors': ").lower()
@@ -58,7 +50,6 @@ if __name__ == '__main__':
     # DETERMINATION OF WINNER
     #
 
- 
     winner=determine_winner(u, c)
     if winner==u:
         print("You won!")
@@ -67,5 +58,6 @@ if __name__ == '__main__':
     elif winner==None:
         print("Tie!")
 
+#test
 
 
