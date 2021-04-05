@@ -85,3 +85,5 @@ if __name__ =="__main__":
         receipt_file.write("\n---------")
         receipt_file.write("\nTHANK YOU! PLEASE COME AGAIN SOON!")
         receipt_file.write("\n---------")
+
+#test
