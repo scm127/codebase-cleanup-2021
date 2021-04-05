@@ -2,6 +2,8 @@ import os
 from datetime import datetime
 from pandas import read_csv
 
+#test
+
 def format_usd(my_price):
     """
     Formats a number as a US dollar with a dollar sign and two decimals
