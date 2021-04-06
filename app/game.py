@@ -32,13 +32,6 @@ def determine_winner(choice1,choice2):
 if __name__ == '__main__':
 
 
-
-
-
-
-        
-
-
     # USER SELECTION
     #
     u = input("Please choose one of 'Rock', 'Paper', or 'Scissors': ").lower()
